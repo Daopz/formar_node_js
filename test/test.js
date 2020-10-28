@@ -3,6 +3,6 @@ const request = require("supertest");
 
     describe("GET /", () => {
       it("respond with Hello World via Github Actions", (done) => {
-        request(app).get("/").expect("Hello World", done);
+        request(app).get("/").expect("Hello World via Github Actions", done);
       })
     });
